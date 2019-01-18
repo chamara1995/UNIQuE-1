@@ -25,5 +25,8 @@
     "serve-favicon": "~2.2.0",
     "tap-telco-api": "0.1.11",
     "yeast": "0.0.0"
+  },
+  "devDependencies": {
+    "testcafe": "^0.23.3"
   }
 }
