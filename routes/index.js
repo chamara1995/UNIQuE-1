@@ -27,6 +27,7 @@ router.post('/login',function (req,res) {
         dbo.collection("users_table").find(query).toArray(function(err, result) {
             if (err) throw err;
             console.log(result[0].user_type);
+
             app.use(session({
                 secret: req.body.user ,
                 email:req.body.password,
@@ -35,9 +36,11 @@ router.post('/login',function (req,res) {
             }));
             console.log(session.email);
             if(result[0].user_type == 'company'){
+                //res.render('logintest');
                 res.render('companyend');
             }else{
-                res.render('clientend');
+                //res.render('logintest');
+                //res.render('clientend');
             }
             db.close();
             //res.render('clientend', { title: 'client subscribe', "messages" : result, record_no : 1});

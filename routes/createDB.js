@@ -51,7 +51,17 @@ router.get('/', function(req, res, next) {
         var myobj2 = [
             { "user_email" : "tadHack@dialog.lk", "user_phoneNo" : "0774561237", "user_Password" : "123", "user_type" : "company", "user_name" : "TADHack" },
             { "user_email" : "slid@ac.lk", "user_phoneNo" : "0774561248", "user_Password" : "123", "user_type" : "company", "user_name" : "SLID" },
-            { "user_email" : "pera@pdn.ac..lk", "user_phoneNo" : "0774545454", "user_Password" : "123", "user_type" : "company", "user_name" : "PeradeniyaUni" }
+            { "user_email" : "pera@pdn.ac.lk", "user_phoneNo" : "0774545454", "user_Password" : "123", "user_type" : "company", "user_name" : "PeradeniyaUni" },
+            { "user_email" : "abc@123.lk", "user_phoneNo" : "0774561237", "user_Password" : "123", "user_type" : "company", "user_name" : "TADHack" },
+            { "user_email" : "gihan@ac.lk", "user_phoneNo" : "0774561248", "user_Password" : "123", "user_type" : "company", "user_name" : "SLID" },
+            { "user_email" : "pera123@pdn.ac.lk", "user_phoneNo" : "0774545454", "user_Password" : "123", "user_type" : "company", "user_name" : "PeradeniyaUni" },
+            { "user_email" : "e14108@ce.pdn.ac.lk", "user_phoneNo" : "0774561237", "user_Password" : "123", "user_type" : "company", "user_name" : "TADHack" },
+            { "user_email" : "123@ac.lk", "user_phoneNo" : "0774561248", "user_Password" : "123", "user_type" : "company", "user_name" : "SLID" },
+            { "user_email" : "e14244@pdn.ac.lk", "user_phoneNo" : "0774545454", "user_Password" : "123", "user_type" : "company", "user_name" : "PeradeniyaUni" },
+            { "user_email" : "dialog@dialog.lk", "user_phoneNo" : "0774561237", "user_Password" : "123", "user_type" : "company", "user_name" : "TADHack" },
+            { "user_email" : "viky@ac.lk", "user_phoneNo" : "0774561248", "user_Password" : "123", "user_type" : "company", "user_name" : "SLID" },
+            { "user_email" : "e14403@pdn.ac.lk", "user_phoneNo" : "0774545454", "user_Password" : "123", "user_type" : "company", "user_name" : "PeradeniyaUni" },
+            { "user_email" : "pera95@pdn.ac.lk", "user_phoneNo" : "0774545454", "user_Password" : "1234", "user_type" : "company", "user_name" : "PeradeniyaUni" }
         ]
         dbo.collection("users_table").insertMany(myobj2, function(err, res) {
             if (err) throw err;

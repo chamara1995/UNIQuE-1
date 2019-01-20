@@ -1,13 +1,11 @@
 import { Selector } from 'testcafe';
 
 fixture `Getting Started`
-    .page `http://localhost:3000/community`;
+    .page `http://localhost:3000`;
 
-test('My first test', async t => {
+test('My 1st test', async t => {
     await t
-    	.typeText('#msg', 'tadHack@dialog.lk')
-        //.click('#submit-button')
-
-        // Use the assertion to check if the actual header text is equal to the expected one
-        //.expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');
+        .typeText('#user', 'tadHack@dialog.lk')
+        .typeText('#password', '123')
+        .click('#submit-button')
 });
